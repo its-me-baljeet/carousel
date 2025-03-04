@@ -1,3 +1,4 @@
+const carousel = document.querySelector(".carousel");
 const slides = document.querySelectorAll(".slide");
 const pageNav = document.getElementById("page-nav");
 let counter = 0;
@@ -44,3 +45,5 @@ function getPrev() {
     counter = (counter - 1 + slides.length) % slides.length;
     slideImage();
 }
+
+setInterval(getNext, 5000);
